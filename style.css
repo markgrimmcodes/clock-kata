@@ -2,4 +2,60 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  background-color: snow;
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 50%;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px #333;
+  position: relative;
+}
+.seconds {
+  position: absolute;
+  border-radius: 1%;
+  background-color: black;
+  width: 2px;
+  height: 48%;
+  top: 2%;
+  left: 49.5%;
+  transform-origin: bottom;
+}
+.minutes {
+  position: absolute;
+  width: 1.5%;
+  height: 40%;
+  background-color: black;
+  border-radius: 2px;
+  left: 49.25%;
+  top: 10%;
+  transform: rotate(150deg);
+  transform-origin: bottom;
+}
+.hours {
+  position: absolute;
+  width: 1.5%;
+  height: 25%;
+  background-color: black;
+  border-radius: 2px;
+  top: 25%;
+  left: 49.25%;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+}
+.center {
+  width: 5%;
+  height: 5%;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 47.5%;
+  left: 47.5%;
 }
