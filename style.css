@@ -59,3 +59,14 @@ body {
   top: 47.5%;
   left: 47.5%;
 }
+.digi-clock {
+  padding-top: 50px;
+  font-size: 2.5rem;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+}
+
+.digi-dots-hidden {
+  display: hidden;
+}
