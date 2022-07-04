@@ -67,6 +67,9 @@ body {
   justify-content: center;
 }
 
-.digi-dots-hidden {
-  display: hidden;
+.hidden {
+  visibility: hidden;
+}
+.hiddenTwo {
+  visibility: hidden;
 }

@@ -2,6 +2,7 @@ const sec = document.querySelector(".seconds");
 const min = document.querySelector(".minutes");
 const hour = document.querySelector(".hours");
 const dots = document.querySelector(".digi-dots");
+const dota = document.querySelector(".digi-dota");
 
 setInterval(() => {
   const date = new Date();
@@ -14,6 +15,9 @@ setInterval(() => {
   document.querySelector(".digi-seconds").innerText = date.getSeconds();
   document.querySelector(".digi-minutes").innerText = date.getMinutes();
   document.querySelector(".digi-hours").innerText = date.getHours();
+
+  dots.classList.toggle("hidden");
+  dota.classList.toggle("hidden");
 
   hour.style.transform = "rotate(" + String(hourDegree) + "deg)";
   min.style.transform = "rotate(" + String(minDegree) + "deg)";
